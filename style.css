@@ -1,0 +1,342 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background: linear-gradient(to right,#4facfe,#00f2fe );
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header{
+    padding: 100px 20px;
+}
+
+button{
+    background: white;
+    color: #0077cc;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+button:hover{
+    background: rgba(0,0,0,0.6);
+    color: white;
+}
+
+#formContainer{
+    /* position: absolute;
+    top: 90%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+    width: 40%; height: 40%;
+    /* background: rgba(0,0,0,0.6); */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+     display: none;
+     margin-bottom: 50px;
+}
+
+#loginForm{
+     background:  rgba(0,0,0,0.6); /*pour un degrade noir transparent*/
+    color: rgb(34, 108, 193);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+}
+
+.hidden{
+    display: none;
+}
+
+/*.menu li {
+    list-style: none; 
+    display: inline-block;
+    margin-right : 200px;
+    
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    background: #f0f0f0;
+    border: 5px solid #ddd;
+}*/
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
+    flex: 1; /*pour prendre tout lespace*/
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: 12px 0;
+    background-color:#f0f0f0;
+    color: #0077cc;
+    text-decoration: none;
+    border-radius: 10px;/*arondir les bord*/
+}
+
+/*survol*/
+nav ul li a:hover{
+    background-color:rgba(0,0,0,0.6);
+    color: #f0f0f0;
+}
+
+/*clic/pression*/
+nav ul li a:active{
+    background-color: rgba(0,0,0,0.6);
+    color: #f0f0f0;
+}
+
+/*footer*/
+footer{
+    background-color:#f0f0f0;
+    color:#0077cc;
+    padding: 20px 0;
+    
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/*conteneur des icones */
+.social-icon{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/*.social-icons a {
+    color: #0077cc;
+    font-size: 24px;
+    text-decoration: none;
+}*/
+
+/*style communs des iconnes*/
+.icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/*couleur par reseau*/
+.facebook {
+    background-color: #b5d1e4;
+}
+.instagram{
+    background-image: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);;
+}
+.whatsapp{
+    background-color: #25d366;
+}
+.email{
+    background-color: #beb5b4;
+}
+.twitter{
+    background-color:#b5d1e4 ;
+}
+/*annimation au survol*/
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.contain{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 100px;
+}
+.contain a {
+    text-decoration: none;
+    color:#0077cc;
+    font-weight: bold;
+}
+.contain a:hover{
+    color: #4a5758;
+}
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+.background-video video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 100px 20px;
+}
+
+
+/* section produit */
+.produit-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+/*carte prduit*/
+ /*.produit-card{
+    background: #fff;
+     width: 300px; 
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: 0.3s;
+} */
+
+.produit-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.produit-card img{
+    width: 100%;
+    height: 200px;
+     object-fit: cover; 
+}
+
+/*bouton*/
+.btn-produit {
+    display: inline-block;
+    margin: 15px 0 25px;
+    padding: 10px 20px;
+    background: #a3b1bc;
+}
+
+/*css des api*/
+#resultats-api{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+}
+
+
+/* Cartes générées par l'API */
+.carte-produit{
+    background: #202020;
+    color: #e7ebee;
+    padding: 12px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.carte-produit .carte-img{
+    width: 160px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 8px;
+}
+.carte-produit .prix{
+    font-weight: bold;
+    margin: 6px 0;
+}
+.carte-produit .reserver-btn{
+    background:#54dd72;
+    color:#fff;
+    border:none;
+    padding:8px 10px;
+    border-radius:6px;
+    cursor:pointer;
+}
+.carte-produit .reserver-btn:hover{
+    opacity:0.9;
+}
+
+/* Modal réservation 
+#reservationModal{
+    position:fixed;
+    top:0; left:0; right:0; bottom:0;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:2000;
+}
+#reservationModal .reservation-overlay{
+    position:absolute; inset:0; background:rgba(0,0,0,0.5);
+}
+#reservationModal .reservation-content{
+    position:relative; z-index:2001; background:#fff; color:#0077cc; padding:18px; border-radius:8px; width:320px; max-width:90%;
+}
+#reservationModal .reservation-content h3{ margin-top:0; }
+#reservationModal .reservation-content input{ width:100%; padding:8px; margin:6px 0 12px; border-radius:4px; border:1px solid #ccc; }
+#reservationModal .reservation-actions{ display:flex; gap:8px; justify-content:flex-end; }
+#reservationModal button{ cursor:pointer; }
+#reservationModal #res-confirm{ background:#0077cc; color:#fff; border:none; padding:8px 12px; border-radius:4px; }
+#reservationModal #res-cancel{ background:#eee; border:none; padding:8px 12px; border-radius:4px; }
+*/
+
+/*reservation.html*/
+.reservation-form{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+.reservation-content{
+    background: hsl(0, 1%, 16%);
+    color: #f3f5f7;
+    padding: 22px;  
+    border-radius: 10px;
+    width: 700px;
+    max-width: 100%;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+.reservation-content h3{ margin-top: 0; text-align: left; }
+.reservation-content label{ display:block; text-align: left; color:#fcfafa; font-weight:600; margin-top:8px; }
+.reservation-content input, .reservation-content select, .reservation-content textarea{ width: 100%; padding: 8px; margin-top:6px; margin-bottom:8px; border-radius: 6px; border: 1px solid #d0d7dd; box-sizing: border-box; }
+.reservation-actions{ display: flex; gap: 8px; justify-content: flex-end; margin-top: 10px; }
+.reservation-content button{ cursor: pointer; padding:8px 12px; border-radius:6px; border:none; }
+.reservation-content #res-confirm{ background: #6bd679; color: #fff; }
+.reservation-content #res-cancel{ background: #eb2525; color: #fff; }
+
+@media (max-width:420px){
+    .reservation-content{ width: 92%; padding:16px; }
+}
+
+

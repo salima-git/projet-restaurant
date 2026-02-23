@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produits</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="background-video">
+    <video autoplay loop muted playsinline>
+        <source src="back.mp4" type="video/mp4">
+    </video>
+</div>
+
+    <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="produits.html">Produits</a></li>
+            <li><a href="a-propos.html">A propos</a></li>
+            <li><a href="#" id="lienconnexion">Se connecter
+            </a></li>
+        </ul>
+    </nav>
+
+<header>
+    <main>
+        <form action="" class="reservation-form">
+            <div class="reservation-content">
+                <h3>Formulaire de réservation</h3>
+
+                <label for="res-prod">Produit</label>
+                <input id="res-prod" name="product" readonly />
+
+                <label for="res-price">Prix</label>
+                <input id="res-price" name="price" readonly />
+
+                <label for="res-name">Votre nom</label>
+                <input id="res-name" name="name" placeholder="Nom complet" />
+
+                <label for="res-contact">Contact (email/tel)</label>
+                <input id="res-contact" name="contact" placeholder="Email ou téléphone" />
+
+                <label for="res-date">Date</label>
+                <input id="res-date" type="date" name="date" required>
+
+                <label for="res-time">Heure</label>
+                <input id="res-time" type="time" name="time" required>
+
+                <label for="res-qty">Nombre de plats</label>
+                <input id="res-qty" type="number" name="quantity" min="1" value="1" required>
+
+                <div class="reservation-actions">
+                    <button id="res-cancel" type="button">Annuler</button>
+                    <button id="res-confirm" type="submit">Confirmer</button>
+                </div>
+            </div>
+        </form>
+    </main>
+</header>
+   
+
+
+    <script src="reservation.js"></script>
+
+<footer>
+    <h3>contactez-moi</h3>
+    <div class="social-icon">
+        <!--whatsapp-->
+        <a href="https://wa.me/+22674336685"
+        target="_blank" class="icon whatsapp">
+     <i class="fa-brands fa-whatsapp" style="color: #008000;"></i>
+    </a>
+    <!--facebook-->
+    <a href="https://www.facebook.com/share/1FwC2KUMMu/"
+        target="_blank" class="icon facebook">
+        <i class="fa-brands fa-facebook" style="color: #0000ff;"></i>
+        </a>
+    <!--instagram-->
+    <a href="https://www.instagram.com/salimata.kiemtore?igsh=ZnpmbXQzMjNmbm00"
+        target="_blank" class="icon instagram">
+        <i class="fa-brands fa-instagram" style="color: #f39147;"></i>
+        </a>
+    <!--twitter-->
+    <a href="https://twitter.com/yourprofile"
+        target="_blank" class="icon twitter">
+        <i class="fa-brands fa-twitter" style="color: #74C0FC;"></i>
+        </a>
+    <!--email-->
+    <a href="mailto:salimatakiemtore035@gmail.com"
+         class="icon email">
+       <i class="fa-solid fa-envelope"></i>
+        </a>    
+    </div><br>
+
+    <div class="contain">
+        <p>&copy; 2025 . Tous droits réservés.</p>
+        <a href="#">Politique de confidentialité</a>
+        <a href="#">condition d'utilisation</a> |
+    </div>
+</footer>
+</body>
+</html>
